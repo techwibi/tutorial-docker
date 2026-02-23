@@ -1,8 +1,0 @@
-services:
-  nginx:
-    image: nginx:latest
-    container_name: nginx-bind-mount
-    ports:
-      - "8080:80"
-    volumes:
-      - ./html:/usr/share/nginx/html:ro
