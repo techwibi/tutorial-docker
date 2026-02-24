@@ -1,0 +1,12 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx-volume
+    ports:
+      - "8080:80"
+    volumes:
+      - web-data:/usr/share/nginx/html:ro
+
+volumes:
+  web-data:
+
