@@ -1,0 +1,8 @@
+services:
+  db:
+    image: mariadb
+    container_name: mariadb-1
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: password1
+      MARIADB_DATABASE: db1
